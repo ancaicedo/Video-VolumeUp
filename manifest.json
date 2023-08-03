@@ -1,22 +1,23 @@
 {
     "name": "VolumeUp",
     "description": "This is a simple chrome extension that allows you to control the volume of your computer with the keyboard.",
-    "manifest_version": 1.0,
+    "manifest_version": 3,
     "version": "1.0",
+    "author": "Andres Caicedo",
     "icons": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+        "16": "icons/logo16.png",
+        "64": "icons/logo64.png",
+        "128": "icons/logo128.png"
     },
     "background": {
-        "scripts": ["background.js"]
+        "service_worker": "background.js"
     },
     "permissions": [
         "tabs",
         "activeTab"
     ],
     "action": {
-        "default_icon": "icon16.png",
+        "default_icon": "icons/logo16.png",
         "default_title": "VolumeUp",
         "default_popup": "popup.html"
     },
