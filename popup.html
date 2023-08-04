@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="popup.css">
     <title>VolumeUp</title>
 </head>
 <body>
     <div class="container">
+
         <div class="header">
-            <h1 style="font-family: 'Lucida Console'">VolumeUp</h1>
+            <output>VolumeUp</output>
         </div>
-        <div class="content">
-            <div class="content__slider">
-                <input type="range" min="0" max="600" value="100" class="slider" id="sliderVolume">
-                <output id="volumeOutput", style="font-family: 'Lucida Console'">100%</output>
-            <div class="content__button">
-                <button id="resetButton", style="font-family: 'Lucida Console'">Reset</button>
-            </div>
+
+        <div class="content__slider">
+            <input type="range" min="0" max="600" value="100" class="slider" id="sliderVolume">
+            <br>
+            <percentage id="volumeOutput">100%</percentage> 
         </div>
+
+        <button class= "reset_button" id="resetButton" role="button">Reset</button>
+
     </div>
+
     <script src="popup.js"></script>
     
 </body>
