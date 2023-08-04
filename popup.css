@@ -1,7 +1,7 @@
 body{
     padding: 20px;
     font-weight: bold;
-    background: linear-gradient(to top left, #7e1406, #df9060);
+    background: linear-gradient(to top left, #0a0a0a, #413f3f);
     background-color: #e9e6e4;
 }
 
@@ -26,16 +26,39 @@ output{
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-#sliderVolume{
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
     width: 150px;
-    margin: 0 auto;
-    font-weight: bold;
+    height: 10px;
+    background: linear-gradient(to bottom right, #f06c37, #b97242);
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 12px;
 }
 
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
 .reset_button {
-  background: linear-gradient(to bottom right, #3b7fcc, #45b9d6);
+  background: linear-gradient(to bottom right, #f06c37, #b97242);
   border: 0;
   width: 150px;
+  opacity: 0.8;
   border-radius: 12px;
   color: #FFFFFF;
   cursor: pointer;
