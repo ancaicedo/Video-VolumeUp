@@ -4,6 +4,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             tabId, { message: 'reset_volume',})
     }
     else{
-        chrome.tabs.sendMessage(tabId, { message: 'volume_reset',})
+        chrome.tabs.sendMessage(tabId, { message: 'restore_volume',})
     }
 });

@@ -1,23 +1,23 @@
 body{
     padding: 20px;
     font-weight: bold;
-    background: linear-gradient(to top left, #0a0a0a, #413f3f);
+    background: linear-gradient(to top left, #0a0a0a, #383636);
     background-color: #e9e6e4;
 }
 
-output{
-    font-size: 30px;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+.header_icon{
+    width: 250px;
+    height: 100%;
+    margin-bottom: 0px;
+    align-items: center;
+    vertical-align: text-bottom;
 }
 
-#volumeOutput{
+#percentage{
     font-size: 20px;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-weight: bold;
-    text-align: left;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -29,11 +29,11 @@ output{
 .slider{
     -webkit-appearance: none;
     appearance: none;
-    width: 150px;
+    width: 250px;
     height: 10px;
-    background: linear-gradient(to bottom right, #f06c37, #b97242);
+    background: linear-gradient(to bottom right, #e95b24, #b96a35);
     outline: none;
-    opacity: 0.8;
+    opacity: 0.9;
     -webkit-transition: .2s;
     transition: opacity .2s;
     border-radius: 12px;
@@ -55,10 +55,10 @@ output{
 
 
 .reset_button {
-  background: linear-gradient(to bottom right, #f06c37, #b97242);
+  background: linear-gradient(to bottom right, #e95b24, #b96a35);
   border: 0;
-  width: 150px;
-  opacity: 0.8;
+  width: 250px;
+  opacity: 0.9;
   border-radius: 12px;
   color: #FFFFFF;
   cursor: pointer;
