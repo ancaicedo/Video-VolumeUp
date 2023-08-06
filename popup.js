@@ -21,7 +21,7 @@ function changeSliderVolume() {
         chrome.tabs.sendMessage(
             tabs[0].id,
             {
-                message: "adjust_volume",
+                message: "change_volume",
             });
     });
     saveNewVolume();

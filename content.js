@@ -11,10 +11,6 @@ initializeRequestListeners();
 
 console.log("Now volume: " + currentVolumePercentage);
 
-
-/**
- * Helper Functions
- */
 function initializeCurrentVolumePercentage() {
     currentVolumePercentage = sessionStorage.getItem(VOLUME_KEY);
 
@@ -30,7 +26,6 @@ function initializeCurrentVolumePercentage() {
 
     console.log("Updated volume: " + currentVolumePercentage);
 }
-
 
 /**
  * Add a listener to initialize gainNode and adjust volume
